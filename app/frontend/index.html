@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voting App</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Voting App</h1>
+        <form id="votingForm">
+            <label for="candidate1">Candidate 1</label>
+            <input type="radio" name="vote" id="candidate1" value="Candidate 1">
+
+            <label for="candidate2">Candidate 2</label>
+            <input type="radio" name="vote" id="candidate2" value="Candidate 2">
+
+            <button type="button" onclick="submitVote()">Submit Vote</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

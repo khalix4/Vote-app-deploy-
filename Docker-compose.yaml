@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  frontend:
+    image: deploy-app:1.1
+    build:
+      context: C:\Users\JERRY\PEPRSONAL-PROJECTS\DEPLOY-vote-app\app\frontend  # Path to the directory containing front-end files
+    ports:
+      - "80:80"  # Map container port 80 to host port 80
+
+  backend:
+    image: mysql   # Path to the directory containing back-end files
+    
+    build:
+      context: C:\Users\JERRY\PEPRSONAL-PROJECTS\DEPLOY-vote-app\app\frontend\backend
+
+    ports:
+      - "8000:8000"  # Map container port 3000 to host port 3000
+  adminer:
+    image: adminer
+    restart: always    
+
